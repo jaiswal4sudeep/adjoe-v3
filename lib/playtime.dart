@@ -113,32 +113,61 @@ class Playtime {
 }
 
 class PlaytimeOptions {
-  String? userId;
-  String? applicationProcessName;
-  PlaytimeUserProfile? userProfile;
-  PlaytimeParams? params;
-  PlaytimeExtensions? extensions;
+  final String? userId;
+  final String? applicationProcessName;
+  final PlaytimeUserProfile? userProfile;
+  final PlaytimeParams? params;
+  final PlaytimeExtensions? extensions;
+
+  PlaytimeOptions({
+    this.userId,
+    this.applicationProcessName,
+    this.userProfile,
+    this.params,
+    this.extensions,
+  });
 }
 
 class PlaytimeExtensions {
-  String? subId1;
-  String? subId2;
-  String? subId3;
-  String? subId4;
-  String? subId5;
+  final String? subId1;
+  final String? subId2;
+  final String? subId3;
+  final String? subId4;
+  final String? subId5;
+
+  PlaytimeExtensions({
+    this.subId1,
+    this.subId2,
+    this.subId3,
+    this.subId4,
+    this.subId5,
+  });
 }
 
 class PlaytimeParams {
-  String? uaNetwork;
-  String? uaChannel;
-  String? uaSubPublisherCleartext;
-  String? uaSubPublisherEncrypted;
-  String? placement;
+  final String? uaNetwork;
+  final String? uaChannel;
+  final String? uaSubPublisherCleartext;
+  final String? uaSubPublisherEncrypted;
+  final String? placement;
+
+  PlaytimeParams({
+    this.uaNetwork,
+    this.uaChannel,
+    this.uaSubPublisherCleartext,
+    this.uaSubPublisherEncrypted,
+    this.placement,
+  });
 }
 
 class PlaytimeUserProfile {
-  PlaytimeGender? gender;
-  DateTime? birthday;
+  final PlaytimeGender? gender;
+  final DateTime? birthday;
+
+  PlaytimeUserProfile({
+    this.gender,
+    this.birthday,
+  });
 }
 
 enum PlaytimeGender {
