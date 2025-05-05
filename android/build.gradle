@@ -4,18 +4,18 @@ version '3.0.0'
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'com.android.tools.build:gradle:8.1.4'
     }
 }
 
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven {
             url  "https://releases.adjoe.io/maven"
         }
@@ -26,7 +26,7 @@ apply plugin: 'com.android.library'
 
 android {
     namespace "io.adjoe.sdk.flutter"
-    compileSdkVersion 33
+    compileSdk 33
 
     defaultConfig {
         minSdkVersion 16
@@ -35,6 +35,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'io.adjoe:adjoe-sdk-android:3.0.0'
+        implementation 'io.adjoe:adjoe-sdk-android:3.1.0'
     }
 }
